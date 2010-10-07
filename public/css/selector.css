@@ -1,0 +1,83 @@
+/*
+Title:		DotME - theme selector / landing page
+Author:		justine@gentlecode.net
+*/
+
+body {
+	background: transparent url(../img/light/bg-page.png) repeat-x;
+	font: 13px/20px Arial, Helvetica, sans-serif;
+	color: #656565;
+	text-shadow: 0px 1px 0px #fff;
+}
+
+/* LINKS */
+
+a:link, a:visited {
+	color: #656565;
+	font-weight: 900;
+	text-decoration: none;
+	outline: none;
+}
+
+a:hover {
+	text-decoration: underline;
+}
+
+/* STRUCTURE */
+
+.container {
+	width: 770px;
+	height: 270px;
+	margin: 200px auto;
+	background: url(../bg-themeselector.png) no-repeat;
+	text-align: center;
+	padding: 80px 0 0;
+}
+
+.container h1 {
+	display: none;
+}
+
+.container p {
+	color: #4b4b4b;
+	font-weight: bold;
+	font-size: 11px;
+	width: 300px;
+	margin: 0 auto;
+	line-height: 16px;
+}
+
+.container ul {
+	width: 666px;
+	overflow: hidden;
+	margin: 0 0 90px 60px;
+}
+
+.container ul li {
+	float: left;
+	margin: 0 20px 0 0;
+}
+
+.container ul li a {
+	display: block;
+	width: 202px;
+	height: 102px;
+	text-indent: -9999px;
+	position: relative;
+}
+
+.container ul li a:active {
+	top: 1px;
+}
+
+.container ul li a.light {
+	background: url(../light.png) no-repeat;
+}
+
+.container ul li a.dark {
+	background: url(../dark.png) no-repeat;
+}
+
+.container ul li a.glass {
+	background: url(../glass.png) no-repeat;
+}

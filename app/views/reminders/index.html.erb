@@ -1,0 +1,7 @@
+<h3>Reminders</h3>
+
+<% @reminders.each do |reminder| %>
+  <div class="website group">
+    <p><%=link_to 'Complete', reminder_path(reminder, :reminder => { :complete => true }), :method => :put %> - <%=reminder.text%></p>
+  </div>
+<% end %>

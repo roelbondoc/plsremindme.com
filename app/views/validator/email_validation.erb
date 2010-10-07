@@ -1,0 +1,15 @@
+Hi <%=@user.name%>
+
+Thanks for joining PlsRemindMe.com
+
+To complete the setup process, please click (or copy/paste) the link below. This will ensure that the email address you sent us is legit.
+
+http://www.plsremindme.com/settings/validate?t=<%=@user.email_validation_token%>
+
+Thanks!
+
+Roel
+PlsRemindMe.com
+
+--
+If you were not expecting this email and you wish to make sure you don't get bothered by us again, please use the unsubscribe link here: http://www.plsremindme.com/unsubscribe/?email=<%=@user.email%>

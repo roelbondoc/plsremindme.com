@@ -1,0 +1,11 @@
+Hi <%=@user.name%>
+
+Here are you reminders for the day:
+
+<% @user.reminders.not_completed.each do |reminder| %>
+  - <%=reminder.text%>
+<% end %>
+
+Thanks,
+
+PlsRemindMe.com

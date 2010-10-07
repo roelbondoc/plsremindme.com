@@ -1,0 +1,439 @@
+/*
+Title:		DotME - glass version styles
+Author:		justine@gentlecode.net
+*/
+
+body {
+	background: #00425d url(../img/glass/bg-body.png) repeat-x;
+	font: 13px/20px Arial, Helvetica, sans-serif;
+	color: #00324b;
+	text-shadow: 0px 1px 0px rgba(255,255,255,0.25);
+}
+
+/* links */
+
+a:link, a:visited {
+	color: #00324b;
+	font-weight: bold;
+	text-decoration: none;
+	outline: none;
+}
+
+a:hover {
+	text-decoration: underline;
+}
+
+
+/* PAGE STRUCTURE
+------------------------------------------------------------- */
+
+.page {
+	background: transparent url(../img/glass/bg-page.png) top center no-repeat;
+	overflow: hidden;
+	position: absolute;
+	left: 0px;
+	right: 0px;
+	top: 0px;
+	bottom: 0px;
+	z-index: 1;
+}
+
+.container {
+	width: 510px;
+	margin: 95px auto 0;
+	position: relative;
+	z-index: 2;
+}
+
+
+/* HEADER
+------------------------------------------------------------- */
+
+.header {
+	width: 510px;
+	height: 104px;
+	padding: 0 5px;
+	background: url(../img/glass/bg-header.png) no-repeat;
+	overflow: hidden;
+	position: relative;
+}
+
+.header h1 {
+	margin: 55px 0 0 30px;
+}
+
+.header h1 a {
+	display: block;
+	width: 237px;
+	height: 24px;
+	text-indent: -9999px;
+	background: url(../img/glass/bg-logo.png) no-repeat;
+}
+
+.header a.vcard {
+	display: block;
+	width: 70px;
+	height: 58px;
+	position: absolute;
+	bottom: 4px; right: 36px;
+	text-indent: -9999px;
+	background: url(../img/glass/bg-vcard.png) no-repeat;
+}
+
+.header p.bubble {
+	width: 124px;
+	height: 39px;
+	background: url(../img/bg-bubble.png) no-repeat;
+	color: #fff;
+	line-height: 30px;
+	text-shadow: 1px 1px 1px #000;
+	text-align: center;
+	position: absolute;
+	top: 0px; right: 6px;
+	display: none;	
+}
+
+
+/* NAVIGATION
+------------------------------------------------------------- */
+
+.nav {
+	width: 482px;
+	height: 34px;
+	padding: 0 5px 0 33px;
+	background: url(../img/glass/bg-nav.png) -1px 0 no-repeat;
+	overflow: hidden;
+}
+
+.nav li {
+	float: left;
+	margin: 6px 10px 0 0;
+}
+
+.nav li a {
+	font-size: 11px;
+	color: #fff;
+	padding: 3px 11px;
+	background: transparent url(../img/glass/bg-button-on.png) repeat-x;
+	border: 1px solid #15425e;
+	-webkit-border-radius: 20px;
+	-moz-border-radius: 20px;
+	border-radius: 20px;
+	-webkit-box-shadow: 0px 1px 2px rgba(0,0,0,0.1);
+	-moz-box-shadow: 0px 1px 2px rgba(0,0,0,0.1);
+	box-shadow: 0px 1px 2px rgba(0,0,0,0.1);
+	text-shadow: 0px -1px 1px rgba(0,0,0,0.25);
+}
+
+.nav li a:hover {
+	text-decoration: none;
+	background: transparent url(../img/glass/bg-button-hover.png) repeat-x;
+}
+
+.nav li a.current, .nav li a:active {
+	text-decoration: none;
+	color: #fff;
+	background: transparent url(../img/glass/bg-button-off.png) repeat-x;
+	border: 1px solid #344d60;
+	text-shadow: 0px 1px 1px rgba(0,0,0,0.5);
+	-webkit-box-shadow: 0px 1px 1px rgba(255,255,255,.25);
+	-moz-box-shadow: 0px 1px 1px rgba(255,255,255,.25);
+	box-shadow: 0px 1px 1px rgba(255,255,255,.25);
+}
+
+/* MAIN
+------------------------------------------------------------- */
+
+h3 {
+	font-size: 16px;
+	text-transform: uppercase;
+	margin-bottom: 3px;
+}
+
+h5 {
+	font-size: 11px;
+	margin-bottom: 25px;
+}
+
+.main {
+	width: 450px;
+	padding: 25px 35px 0;
+	background: url(../img/glass/bg-main.png) repeat-y;
+}
+
+/* ABOUT TAB */
+
+.main .about div {
+	width: 205px;
+	padding: 0 20px 0 0;
+	float: left;
+}
+
+.main .about ul.skills li {
+	padding: 0 0 0 25px;
+	margin: 0 0 10px 0;
+	font-weight: bold;
+	background: url(../img/bg-skills.png) no-repeat;
+}
+
+.main .about ul.skills li.gui {
+	background-position: 0 2px;
+}
+
+.main .about ul.skills li.icon {
+	background-position: 0 -27px;
+}
+
+.main .about ul.skills li.graphic {
+	background-position: 0 -57px;
+}
+
+.main .about ul.skills li.html {
+	background-position: 0 -89px;
+}
+
+.main .about ul.skills li.wp {
+	background-position: 0 -118px;
+}
+
+.main .about .website {
+	clear: both;
+	width: 100%;
+	margin: 20px 0 0 0;
+	padding: 20px 0 0 0;
+	background: url(../img/glass/divider.png) repeat-x;
+}
+
+.main .about .website img {
+	float: left;
+	margin: 0 15px 15px 0;
+}
+
+.main .about .website span.title {
+	display: block;
+	float: left;
+	margin: 7px 0 5px 0;
+	font-size: 16px;
+	text-transform: uppercase;
+	font-weight: 900;
+}
+
+.main .about .website span {
+	float: left;
+}
+
+/* WORK TAB */
+
+.main .work {
+	padding-bottom: 20px;
+}
+
+.main .work .folio {
+	background: url(../img/bg-workimg.png) 0 0 no-repeat;
+	position: relative;
+}
+
+.main .work .working {
+	height: 350px !important;
+	width: 440px !important;
+}
+
+.main .work .folio li {
+	top: 27px !important;
+}
+
+.main .work #pager {
+	margin: 5px 195px;
+}
+
+.main .work #pager a {
+	display: block;
+	width: 10px;
+	height: 10px;
+	float: left;
+	margin: 0 10px 0 0;
+	text-indent: -9999px;
+	background: url(../img/bg-dots.png) top right no-repeat;
+}
+
+.main .work #pager a.activeSlide {
+	background-position: top left;
+}
+
+/* NETWORKS TAB */
+
+.main .networks ul.social {
+	overflow: hidden;
+}
+
+.main .networks ul.social li {
+	float: left;
+	margin: 0 0 10px 0;
+}
+
+.main .networks ul.social li a {
+	display: block;
+	width: 209px;
+	height: 48px;
+	padding: 8px;
+	color: #00324b;
+	overflow: hidden;
+	-webkit-border-radius: 10px;
+	-moz-border-radius: 10px;
+	border-radius: 10px;
+	position: relative;
+}
+
+.main .networks ul.social li a:hover {
+	background-color: rgba(0,0,0,0.1);
+	text-decoration: none;
+}
+
+.main .networks ul.social li a:active {
+	background-color: rgba(0,0,0,0.2);
+	top: 1px;
+}
+
+.main .networks ul.social li a img {
+	float: left;
+	margin: 0 12px 0 0;
+}
+
+.main .networks ul.social li a span.site {
+	font-size: 16px;
+	line-height: 28px;
+}
+
+.main .networks ul.social li a span {
+	font-size: 13px;
+	font-weight: normal;
+}
+
+/* CONTACT TAB */
+
+.main form label {
+	display: none;
+}
+
+.main form input, .main form textarea {
+	color: #00324b;
+	font: 13px Arial, Helvetica, sans-serif;
+	background: #fff url(../img/bg-input.png) repeat-x;
+	border: 1px solid #00324b;
+	-webkit-border-radius: 4px;
+	-moz-border-radius: 4px;
+	border-radius: 4px;
+	padding: 8px;
+	display: block;
+	margin: 0 0 18px 0;
+	width: 420px;
+	clear: both;
+	resize: none;
+}
+
+.main form input#name, .main form input#email {
+	width: 192px;
+	float: left;
+	clear: none;
+}
+
+.main form input#name {
+	margin-right: 18px;
+}
+
+.main form textarea {
+	height: 100px;
+	margin-bottom: 25px;
+}
+
+.main form input#submit {
+	font-size: 11px;
+	color: #fff;
+	width: 58px;
+	font-weight: bold;
+	padding: 4px 0;
+	background: transparent url(../img/glass/bg-button-on.png) repeat-x;
+	border: 1px solid #15425e;
+	-webkit-border-radius: 20px;
+	-moz-border-radius: 20px;
+	border-radius: 20px;
+	-webkit-box-shadow: 0px 1px 2px rgba(0,0,0,0.1);
+	-moz-box-shadow: 0px 1px 2px rgba(0,0,0,0.1);
+	box-shadow: 0px 1px 2px rgba(0,0,0,0.1);
+	text-shadow: 0px -1px 1px rgba(0,0,0,0.25);
+	float: right;
+	clear: none;
+	margin: 0 12px 0 0;
+	cursor: pointer;
+}
+
+.main form input#submit:hover {
+	text-decoration: none;
+	background: transparent url(../img/glass/bg-button-hover.png) repeat-x;
+}
+
+.main form input#submit:active {
+	text-decoration: none;
+	color: #fff;
+	background: transparent url(../img/glass/bg-button-off.png) repeat-x;
+	border: 1px solid #344d60;
+	text-shadow: 0px 1px 1px rgba(0,0,0,0.5);
+	-webkit-box-shadow: 0px 1px 1px rgba(255,255,255,.25);
+	-moz-box-shadow: 0px 1px 1px rgba(255,255,255,.25);
+	box-shadow: 0px 1px 1px rgba(255,255,255,.25);
+}
+
+.main div#error {
+	float: left;
+	width: 350px;
+	font-size: 11px;
+	color: red;
+}
+
+.main div#error p.loading {
+	color: #00324b;
+}
+
+
+/* FOOTER
+------------------------------------------------------------- */
+
+.footer {
+	width: 510px;
+	padding: 60px 5px 80px;
+	background: url(../img/glass/bg-footer.png) no-repeat;
+}
+
+.footer p {
+	width: 240px;
+	margin: 0 auto;
+	font-size: 11px;
+	line-height: 14px;
+	font-weight: bold;
+	color: #111;
+	text-align: center;
+	text-shadow: 0px 1px 0px rgba(255,255,255,0.25);
+}
+
+.footer a {
+	color: #161616;
+}
+
+
+/* MISC.
+------------------------------------------------------------- */
+
+.hide {
+	display: none;
+}
+
+
+/* self-clear floats */
+
+.group:after {
+	content: "."; 
+	display: block; 
+	height: 0; 
+	clear: both; 
+	visibility: hidden;
+}

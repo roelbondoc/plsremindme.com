@@ -1,0 +1,22 @@
+<h3>Email Setup</h3>
+
+<h5>Your current timezone is <%=current_user.time_zone%></h5>
+
+<%if flash[:notice]%>
+  <h6><%=flash[:notice]%></h6>
+<%else%>
+  <h6>Where do you want your reminders to be sent?</h6>
+  <% form_for @user, :url => setting_path(@user) do |f| %>
+    <fieldset>
+      <%=f.label :email, "Email Address"%>
+      <%=f.text_field :email%>
+      <span style="padding-left:5px;"><%=(@user.email_valid?)?'Validated':'Not yet validated'%></span>
+      <div id="error">
+        <% unless @user.errors.empty? %>
+            <%="Email address "+@user.errors.on(:email) unless @user.errors.on(:email).nil?%>
+        <% end %>
+      </div>
+      <%=f.submit "Validate"%>
+    </fieldset>
+  <% end %>
+<%end%>
